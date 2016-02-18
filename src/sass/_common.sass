@@ -31,6 +31,45 @@
 body
 	font-family: Arial, sans-serif
 	font-size: 12px
-	line-height: 1.4
+	line-height: 1.2
+	background-color: #000
+a
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+img
+	+r(1420)
+		max-width: 100%
+		height: auto
 	
 // common blocks
+//fonts
++font("PfSqureSansPro Bold", "pfsquaresanspro-bold")
++font("PfSqureSansPro Regular", "pfsquaresanspro-regular")
+=bold
+	font-family: "PfSqureSansPro Bold", sans-serif
+=regular
+	font-family: "PfSqureSansPro Regular", sans-serif
+
+//buttons
+%btn
+	width: 260px
+	height: 66px
+	line-height: 64px
+	background-color: #9c1d6c
+	border-radius: 3px
+	font: 400 31px Arial, sans-serif
+	display: inline-block
+	color: #fff
+	position: relative
+.btn
+	@extend %btn
+.btn-buy
+	@extend %btn
+	text-decoration: none
+	line-height: 66px
+	+tr(all 0.3s ease)
+	&:active
+		top: 1px
+	&:hover
+		background-color: lighten(#9c1d6c, 3%)

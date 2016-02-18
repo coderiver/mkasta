@@ -1,1 +1,121 @@
 // Normally mainpage styles
+.m-card
+	position: relative
+	font-size: 0
+	text-align: center
+	.m-card__in
+		margin: auto
+		max-width: 990px
+		padding: 54px 20px 189px
+	.m-card__content
+		.col1, .col2
+			width: 50%
+			display: inline-block
+			vertical-align: top
+			+r(976)
+				width: 100%
+				margin-bottom: 20px
+	.card__title
+		padding: 0 20px 30px
+	.circle
+		display: inline-block
+		vertical-align: top
+		width: 50%
+		+r(540)
+			width: 100%
+			&:not(:last-child)
+				margin-bottom: 50px
+	.btn-buy
+		margin: 81px 0 92px
+.m-card__title
+	font: 700 67.69px "Arial Bold", sans-serif
+	color: #fdfdfd
+	+r(1024)
+		font-size: 58px
+	+r(900)
+		font-size: 52px
+	+r(768)
+		font-size: 47px
+	+r(650)
+		font-size: 42px
+	+r(550)
+		font-size: 36px
+	+r(400)
+		font-size: 32px
+	span
+		color: #b7176e
+	a
+		color: #b7176e
+		border-bottom: 2px solid #9c1d6c
+		line-height: 1
+		+tr(all 0.3s)
+		text-decoration: none
+		&:hover
+			border-color: transparent
+.card, .bonus
+	padding: 60px 0 0
+.card
+	display: none
+	&.is-visible
+		display: block
+.card__title
+	font: 24.66px Arial, sans-serif
+	color: #fff
+	span
+		padding: 0 6px
+		position: relative
+		top: 1px
+.circle
+	position: relative
+	&.circle_arrow
+		&:after
+			content: " "
+			display: block
+			position: absolute
+			top: 73px
+			right: -20px
+			+s(arrow)
+			+r(976)
+				+scale(1.5)
+			+r(540)
+				left: 0
+				right: 0
+				margin: auto
+				top: 108%
+				+rotate(90)
+
+	figcaption
+		font: 18px Arial, sans-serif
+		color: #fff
+		margin-top: 82px
+		+r(540)
+			margin-top: 20px
+		span 
+			color: #b2b2b2
+			font-size: 14px
+			display: block
+			margin-top: 24px
+.bonus
+	position: relative
+	color: #fdfdfd
+	+bold
+	.bonus__text
+		font-size: 38.36px
+		+r(1024)
+			font-size: 34px
+		span
+			color: #e5007d
+			text-transform: uppercase
+			line-height: 1
+		+r(540)
+			font-size: 26px
+	.bonus__pic
+		margin-top: 74px
+	a
+		text-decoration: underline
+		font-size: 33.35px
+		line-height: 1
+		display: inline-block
+		margin-top: 40px
+		color: #ffffff
+		+regular
