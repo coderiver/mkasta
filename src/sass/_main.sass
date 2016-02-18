@@ -54,6 +54,8 @@
 			border-color: transparent
 .card, .bonus
 	padding: 60px 0 0
+	+r(900)
+		padding: 40px 0 0
 .card
 	display: none
 	&.is-visible
@@ -112,10 +114,16 @@
 	.bonus__pic
 		margin-top: 74px
 	a
-		text-decoration: underline
+		text-decoration: none
+		border-bottom: 1px solid #fff
 		font-size: 33.35px
 		line-height: 1
 		display: inline-block
 		margin-top: 40px
 		color: #ffffff
+		+tr(all 0.3s ease)
 		+regular
+		&:hover
+			border-bottom-color: transparent
+		+r(900)
+			font-size: 29px

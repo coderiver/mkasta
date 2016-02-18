@@ -209,12 +209,14 @@ header { width: 100%; height: 60px; background: #000000; }
 .bonus .bonus__text { font-size: 38.36px; }
 .bonus .bonus__text span { color: #e5007d; text-transform: uppercase; line-height: 1; }
 .bonus .bonus__pic { margin-top: 74px; }
-.bonus a { text-decoration: underline; font-size: 33.35px; line-height: 1; display: inline-block; margin-top: 40px; color: #ffffff; font-family: "PfSqureSansPro Regular", sans-serif; }
+.bonus a { text-decoration: none; border-bottom: 1px solid #fff; font-size: 33.35px; line-height: 1; display: inline-block; margin-top: 40px; color: #ffffff; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; font-family: "PfSqureSansPro Regular", sans-serif; }
+.bonus a:hover { border-bottom-color: transparent; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1420px){
  img{ max-width: 100%; height: auto; } }
 @media only screen and (max-width: 1024px){
+ .btn-buy{ font-size: 28px; width: 190px; height: 50px; line-height: 50px; }
  .m-card__title{ font-size: 58px; }
  .bonus .bonus__text{ font-size: 34px; } }
 @media (max-width: 1024px){
@@ -234,7 +236,9 @@ header { width: 100%; height: 60px; background: #000000; }
 @media (max-width: 900px){
  .footer{ position: relative; } }
 @media only screen and (max-width: 900px){
- .m-card__title{ font-size: 52px; } }
+ .m-card__title{ font-size: 52px; }
+ .card, .bonus{ padding: 40px 0 0; }
+ .bonus a{ font-size: 29px; } }
 @media (max-width: 800px){
  .footer__content.container, .footer__content.container .footer__info, .footer__content.container .footer__projects, .footer__content.container .footer__partners{ display: block; }
  .footer__info-left, .footer__info-right{ display: inline-block !important; }
@@ -257,6 +261,8 @@ header { width: 100%; height: 60px; background: #000000; }
  .footer__info-left, .footer__info-right{ display: block !important; } }
 @media only screen and (max-width: 650px){
  .m-card__title{ font-size: 42px; } }
+@media only screen and (max-width: 600px){
+ .btn-buy{ font-size: 24px; width: 160px; height: 45px; line-height: 45px; } }
 @media (max-width: 560px){
  .container{ padding-left: 10px; padding-right: 10px; } }
 @media only screen and (max-width: 550px){
