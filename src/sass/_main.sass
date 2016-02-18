@@ -27,7 +27,7 @@
 	.m-card__in
 		margin: auto
 		max-width: 990px
-		padding: 54px 20px 189px
+		padding: 105px 20px 0
 	.m-card__content
 		.col1, .col2
 			width: 50%
@@ -134,6 +134,9 @@
 			font-size: 26px
 	.bonus__pic
 		margin-top: 74px
+		+r(900)
+			img
+				max-width: 300px
 	a
 		text-decoration: none
 		border-bottom: 1px solid #fff
@@ -214,3 +217,110 @@
 		text-transform: uppercase
 		background-color: $green
 		width: 100%
+.share-wrp
+	position: relative
+	.time-b
+		position: absolute
+		top: 144px
+		left: -43px
+		+r(1100)
+			display: block
+			position: relative
+			padding: 30px 0
+			text-align: center
+			top: inherit
+			left: inherit
+		.time-b__circle
+			+r(1100)
+				display: inline-block
+.share
+	position: relative
+	.share__in
+		max-width: 980px
+		margin: auto
+		padding: 0 20px 137px
+		&.share__in_no-space
+			+r(1024)
+				padding-bottom: 0
+		+r(1100)
+			padding-bottom: 5%
+.logos-wrp
+	position: relative
+.logos
+	max-width: 940px
+	min-height: 1119px
+	background-color: white
+	border-radius: 10px
+	margin: auto
+	text-align: center
+	padding: 25px
+	+r(980)
+		min-height: auto
+		height: auto
+	+r(790)
+		padding: 30px 25px
+.logos__top
+	color: #b7176e
+	+bold
+	font-size: 40px
+	text-transform: uppercase
+	padding: 20px 0 18px
+	margin-bottom: 20px
+	position: relative
+	+r(1024)
+		font-size: 35px
+	+r(790)
+		font-size: 32px
+		padding-top: 0
+	+r(600)
+		font-size: 28px
+	+r(500)
+		font-size: 22px
+	+r(380)
+		font-size: 20px
+	+r(340)
+		font-size: 18px
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		z-index: 1
+		background: url(../img/line.png) no-repeat center
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 5px
+.time-b
+	display: inline-block
+	font-size: 0
+	.time-b__container
+		+r(1100)
+			margin: 0 -1%
+	.time-b__circle
+		display: block
+		text-align: center
+		background-color: #ff008a
+		width: 50px
+		height: 50px
+		line-height: 50px
+		margin-bottom: 8px
+		cursor: pointer
+		position: relative
+		border-radius: 50%
+		+r(1100)
+			margin: 0 1%
+			border-radius: initial
+			width: 18%
+			m
+		&:nth-child(even)
+			background-color: #96c13e
+		&:active
+			top: 1px
+		span 
+			font-size: 12px
+			color: #fff
+			+bold
+			display: inline-block
+			+r(1100)
+				font-size: 18px

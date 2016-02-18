@@ -1,4 +1,11 @@
 $(document).ready(function() {
+	$('.js-time a').on('click', function() {
+		var section = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(section).offset().top - 10
+		}, 500);
+		return false;
+	});
 	$('.js-more').on('click', function(e){
 		e.preventDefault();
 		$('.card').toggleClass('is-visible');
