@@ -1,10 +1,15 @@
 // Normally mainpage styles
+.out
+	overflow: hidden
 .wrapper
-	background: url(../img/bg.png) no-repeat top center
+	+rm(1024)
+		background: url(../img/bg.png) no-repeat top center
 .screen
 	height: 520px
 	position: relative
 	overflow: hidden
+	+r(940)
+		height: 495px
 	.screen__in
 		padding: 0 20px
 		position: absolute
@@ -21,7 +26,26 @@
 		background-size: cover
 		width: auto
 		height: auto
-		
+		+r(1024)
+			width: 190%
+			top: 0
+			transform: translate(-50%, 0%)
+	
+	+r(1024)
+		.go-in
+			max-width: 55%
+			+r(800)
+				.col1,
+				.col2
+					width: 100%
+					padding: 0
+				.col1
+					margin-bottom: 10px
+		.screen__in
+			bottom: auto
+			width: 100%
+			height: 100%
+			padding-top: 39%
 .m-card
 	position: relative
 	font-size: 0
@@ -30,6 +54,8 @@
 		margin: auto
 		max-width: 990px
 		padding: 105px 20px 0
+		+r(990)
+		padding-top: 0
 	.m-card__content
 		.col1, .col2
 			width: 50%
@@ -54,11 +80,9 @@
 	font: 700 67.69px "Arial Bold", sans-serif
 	color: #fdfdfd
 	+r(1024)
-		font-size: 58px
-	+r(900)
-		font-size: 52px
-	+r(768)
 		font-size: 47px
+	+r(900)
+		font-size: 40px
 	+r(650)
 		font-size: 42px
 	+r(550)
@@ -317,7 +341,7 @@
 		border-radius: 50%
 		+r(1100)
 			margin: 0 1%
-			border-radius: initial
+			border-radius: 0
 			width: 18%
 		+r(700)
 			height: 40px
