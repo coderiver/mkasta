@@ -5,6 +5,14 @@
 	height: 520px
 	position: relative
 	overflow: hidden
+	.screen__in
+		padding: 0 20px
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		margin: auto
+		z-index: 1
 	video
 		position: absolute
 		top: 50%
@@ -13,13 +21,7 @@
 		background-size: cover
 		width: auto
 		height: auto
-	.go-in 
-		position: absolute
-		bottom: 30px
-		left: 0
-		right: 0
-		margin: auto
-		z-index: 1
+		
 .m-card
 	position: relative
 	font-size: 0
@@ -232,6 +234,8 @@
 			left: inherit
 		+r(700)
 			padding: 15px 0
+		+r(500)
+			text-align: left
 		.time-b__circle
 			+r(1100)
 				display: inline-block
@@ -241,11 +245,10 @@
 		max-width: 980px
 		margin: auto
 		padding: 0 20px 137px
+		+r(1024)
+			padding-bottom: 50px
 		&.share__in_no-space
-			+r(1024)
-				padding-bottom: 0
-		+r(1100)
-			padding-bottom: 5%
+			padding-bottom: 0
 .logos-wrp
 	position: relative
 .logos
@@ -261,6 +264,8 @@
 		height: auto
 	+r(790)
 		padding: 30px 25px
+	+r(600)
+		padding: 15px
 .logos__top
 	color: #b7176e
 	+bold
@@ -317,6 +322,9 @@
 		+r(700)
 			height: 40px
 			line-height: 40px
+		+r(500)
+			width: 31%
+			margin-bottom: 10px
 		&:nth-child(even)
 			background-color: #96c13e
 		&:active
@@ -328,3 +336,9 @@
 			display: inline-block
 			+r(1100)
 				font-size: 18px
+.bottom
+	margin: 70px 0
+	.bottom__in
+		padding: 0 20px
+	.go-in 
+		margin: 0 auto
