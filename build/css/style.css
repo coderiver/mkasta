@@ -321,6 +321,9 @@ header { width: 100%; height: 60px; background: #000000; }
 @media only screen and (max-width: 768px){
  .m-card__title{ font-size: 47px; }
  .go-in{ margin-top: 20px; } }
+@media only screen and (max-width: 700px){
+ .share-wrp .time-b{ padding: 15px 0; }
+ .time-b .time-b__circle{ height: 40px; line-height: 40px; } }
 @media (max-width: 660px){
  .footer__info, .footer__info-left, .footer__top-content, .footer__info-right, .footer__content, .footer__container, .footer__projects, .footer__partners, .footer-social__list, .footer-apps{ display: block; }
  .footer__top-left, .footer__top-right{ width: 100%; text-align: center; }

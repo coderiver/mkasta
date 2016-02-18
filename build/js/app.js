@@ -26,7 +26,7 @@ $(document).ready(function() {
 	$('.js-time a').on('click', function() {
 		var section = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $(section).offset().top - 10
+			scrollTop: $(section).offset().top - 30
 		}, 500);
 		return false;
 	});
