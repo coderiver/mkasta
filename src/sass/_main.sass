@@ -4,6 +4,30 @@
 .wrapper
 	+rm(1024)
 		background: url(../img/bg.png) no-repeat top center
+.final
+	position: relative
+	text-align: center
+	.final__in
+		padding: 0 20px
+		max-width: 530px
+		width: 100%
+		margin: auto
+		+r(1024)
+			padding-top: 30px
+		+r(600)
+			padding-top: 45px
+		+r(540)
+			padding-top: 60px
+		+r(420)
+			padding-top: 90px
+	p, span
+		+arial
+		font-size: 37px
+		color: #fff
+	span
+		display: inline-block
+		color: #b7176e
+		margin-top: 12px
 .screen
 	height: 520px
 	position: relative
@@ -65,11 +89,7 @@
 	.m-card__in
 		margin: auto
 		max-width: 990px
-		padding: 105px 20px 0
-		+r(900)
-			padding-top: 85px
-		+r(530)
-			padding-top: 110px
+		padding: 43px 20px 0
 	.m-card__content
 		.col1, .col2
 			width: 50%
@@ -195,10 +215,14 @@
 	background-color: #7d1756
 	background: linear-gradient(45deg, #7d1756 0%, #7e1856 100%)
 	border-radius: 5px
-	z-index: 100
+	z-index: 9900
 	right: 14px
-	+r(1420)
-		display: none
+	opacity: 0
+	&.is-active
+		opacity: 1
+		+tr(opacity .4s ease)
+	// +r(1420)
+	// 	display: none
 	.mail-form__top
 		+proxima-regular
 		font-size: 11px

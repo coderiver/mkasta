@@ -25,7 +25,7 @@ $(document).ready(function() {
 			$(window).scroll(function(){ 
 
 				var windowTop = $(window).scrollTop();
-				if ($(window).width() >= 1150) {
+				if ($(window).width() >= 1024) {
 				
 					if (stickyTop < windowTop){
 						el.css({ position: 'fixed', top: 10 });
